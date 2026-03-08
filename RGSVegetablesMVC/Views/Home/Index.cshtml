@@ -1,0 +1,93 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero">
+  <picture>
+    <source srcset="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce?q=80&w=1920&auto=format&fit=crop" media="(min-width: 768px)">
+    <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=1200&auto=format&fit=crop" alt="Fresh Indian vegetables at a market" class="hero-bg" />
+  </picture>
+  <div class="container hero-content">
+    <h1>Farm‑fresh vegetables from the <span class="accent">Kavali</span> family</h1>
+    <p>Supplying households, hotels, and kitchens across Moosapet, Shankarpally, Patancheru, and Moinabad — retail & wholesale.</p>
+    <div class="hero-ctas">
+      <a asp-controller="Home" asp-action="Vegetables" class="btn">View Vegetables</a>
+      <a asp-controller="Home" asp-action="Contact" class="btn btn-outline">Get a Quote</a>
+    </div>
+    <ul class="location-pills">
+      <li>Moosapet (Hyd)</li>
+      <li>Shankarpally (RR)</li>
+      <li>Patancheru (Sangareddy)</li>
+      <li>Moinabad (RR)</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container section grid-2 highlight">
+  <div>
+    <h2>Why choose RGS?</h2>
+    <ul class="checks">
+      <li>Early‑morning harvest & same‑day dispatch</li>
+      <li>Retail & wholesale pricing with volume slabs</li>
+      <li>Clean sorting, grading, and careful packing</li>
+      <li>On‑time delivery with route planning</li>
+    </ul>
+    <div class="badges">
+      <span class="badge">FSSAI compliant</span>
+      <span class="badge">Hygienic handling</span>
+      <span class="badge">Cold‑chain ready</span>
+    </div>
+  </div>
+  <figure class="card-image">
+    <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1542831371-d531d36971e6?q=80&w=1200&auto=format&fit=crop" alt="Sorted crates of fresh vegetables" />
+  </figure>
+</section>
+
+<section class="container section">
+  <h2 class="center">Popular Vegetables</h2>
+  <div class="cards">
+    <article class="card">
+      <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?q=80&w=800&auto=format&fit=crop" alt="Tomatoes" />
+      <h3>Tomato</h3>
+      <p>Bright, juicy batches ideal for daily cooking and bulk orders.</p>
+    </article>
+    <article class="card">
+      <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1508747703725-719777637510?q=80&w=800&auto=format&fit=crop" alt="Onions" />
+      <h3>Onion</h3>
+      <p>Red & white varieties; graded for uniform size and shelf life.</p>
+    </article>
+    <article class="card">
+      <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1506806732259-39c2d0268443?q=80&w=800&auto=format&fit=crop" alt="Potatoes" />
+      <h3>Potato</h3>
+      <p>Firm, earthy potatoes perfect for restaurants and caterers.</p>
+    </article>
+    <article class="card">
+      <img onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='800' height='600'><rect width='100%' height='100%' fill='%23e8f2ec'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='24' fill='%231f7a4c'>Image coming fresh!</text></svg>';" src="https://images.unsplash.com/photo-1447175008436-054170c2e979?q=80&w=800&auto=format&fit=crop" alt="Leafy greens" />
+      <h3>Leafy Greens</h3>
+      <p>Spinach, coriander, methi — cleaned and bundled neatly.</p>
+    </article>
+  </div>
+  <div class="center m-top">
+    <a class="btn" asp-controller="Home" asp-action="Vegetables">See Full List</a>
+  </div>
+</section>
+
+<section class="container section clients">
+  <h2 class="center">Serving leading platforms & local businesses</h2>
+  <p class="center subtle">We work with food delivery partners and modern retail formats in Hyderabad.</p>
+  <ul class="logo-row">
+    <li class="logo-chip">Zomato</li>
+    <li class="logo-chip">Swiggy</li>
+    <li class="logo-chip">Reliance Fresh</li>
+  </ul>
+</section>
+
+<section class="testimonial-strip">
+  <div class="container strip-inner">
+    <blockquote>
+      "On‑time delivery, consistent quality, and very responsive on bulk enquiries. RGS is our daily go‑to."
+      <cite>— Head Chef, Hyderabad</cite>
+    </blockquote>
+    <a asp-controller="Home" asp-action="Testimonials" class="btn btn-light">Read More</a>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="container section grid-2">
+  <div>
+    <h1>Get in touch</h1>
+    <p>Tell us your requirement — daily supply, event catering, or a one‑time bulk order. We’ll respond with today’s rates and delivery options.</p>
+    <form class="form" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you shortly.'); this.reset();">
+      <div class="field"><label>Name</label><input type="text" required placeholder="Your full name"></div>
+      <div class="field"><label>Phone</label><input type="tel" required placeholder="+91 ..."></div>
+      <div class="field"><label>Email (optional)</label><input type="email" placeholder="you@example.com"></div>
+      <div class="field"><label>Message</label><textarea rows="5" required placeholder="Vegetables needed, quantity, delivery area..."></textarea></div>
+      <button class="btn" type="submit">Send Enquiry</button>
+    </form>
+  </div>
+  <aside class="contact-aside">
+    <div class="contact-card">
+      <h3>Reach us</h3>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>WhatsApp:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> hello@rgsvegetables.in</p>
+    </div>
+    <div class="contact-card">
+      <h3>Areas we serve</h3>
+      <ul class="checks">
+        <li>Moosapet, Hyderabad</li>
+        <li>Shankarpally, RR Dist</li>
+        <li>Patancheru, Sangareddy Dist</li>
+        <li>Moinabad, RR Dist</li>
+      </ul>
+    </div>
+    <div class="contact-card">
+      <h3>Working hours</h3>
+      <p>Mon–Sun: 5:30 AM – 7:30 PM</p>
+    </div>
+  </aside>
+</section>

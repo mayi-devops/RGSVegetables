@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>@ViewData["Title"] - RGS Vegetable Supplier</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="~/styles.css" />
+  <link rel="icon" href="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=64&auto=format&fit=crop"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" asp-controller="Home" asp-action="Index">RGS <span>Vegetable Supplier</span></a>
+      <nav class="nav">
+        <a asp-controller="Home" asp-action="Index" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")">Home</a>
+        <a asp-controller="Home" asp-action="About" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "About" ? "active" : "")">About</a>
+        <a asp-controller="Home" asp-action="Vegetables" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Vegetables" ? "active" : "")">Vegetables</a>
+        <a asp-controller="Home" asp-action="Clients" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Clients" ? "active" : "")">Clients</a>
+        <a asp-controller="Home" asp-action="Testimonials" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Testimonials" ? "active" : "")">Testimonials</a>
+        <a asp-controller="Home" asp-action="Contact" class="btn btn-sm">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    @RenderBody()
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>RGS Vegetable Supplier</h4>
+        <p>Family‑run farm & supply business from Hyderabad (Kavali family).</p>
+        <p class="subtle">Moosapet • Shankarpally • Patancheru • Moinabad</p>
+      </div>
+      <nav class="footer-nav">
+        <a asp-controller="Home" asp-action="About">About</a>
+        <a asp-controller="Home" asp-action="Vegetables">Vegetables</a>
+        <a asp-controller="Home" asp-action="Clients">Clients</a>
+        <a asp-controller="Home" asp-action="Testimonials">Testimonials</a>
+        <a asp-controller="Home" asp-action="Contact">Contact</a>
+      </nav>
+      <div class="footer-cta">
+        <p class="subtle">Looking for today’s rates?</p>
+        <a class="btn btn-light" asp-controller="Home" asp-action="Contact">Request a Quote</a>
+      </div>
+    </div>
+    <div class="container tiny center">© 2025 RGS Vegetable Supplier</div>
+  </footer>
+
+  <script src="~/script.js"></script>
+  @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
