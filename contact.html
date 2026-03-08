@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — RGS Vegetable Supplier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">RGS <span>Vegetable Supplier</span></a>
+      <nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="vegetables.html">Vegetables</a><a href="clients.html">Clients</a><a href="testimonials.html">Testimonials</a><a class="active btn btn-sm" href="contact.html">Contact</a></nav>
+      <button class="nav-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main class="container section grid-2">
+    <div>
+      <h1>Get in touch</h1>
+      <p>Tell us your requirement — daily supply, event catering, or a one‑time bulk order. We’ll respond with today’s rates and delivery options.</p>
+      <form class="form" onsubmit="event.preventDefault(); alert('Thanks! We\'ll get back to you shortly.'); this.reset();">
+        <div class="field"><label>Name</label><input type="text" required placeholder="Your full name"></div>
+        <div class="field"><label>Phone</label><input type="tel" required placeholder="+91 ..."></div>
+        <div class="field"><label>Email (optional)</label><input type="email" placeholder="you@example.com"></div>
+        <div class="field"><label>Message</label><textarea rows="5" required placeholder="Vegetables needed, quantity, delivery area..."></textarea></div>
+        <button class="btn" type="submit">Send Enquiry</button>
+      </form>
+    </div>
+    <aside class="contact-aside">
+      <div class="contact-card">
+        <h3>Reach us</h3>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>WhatsApp:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> hello@rgsvegetables.in</p>
+      </div>
+      <div class="contact-card">
+        <h3>Areas we serve</h3>
+        <ul class="checks">
+          <li>Moosapet, Hyderabad</li>
+          <li>Shankarpally, RR Dist</li>
+          <li>Patancheru, Sangareddy Dist</li>
+          <li>Moinabad, RR Dist</li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <h3>Working hours</h3>
+        <p>Mon–Sun: 5:30 AM – 7:30 PM</p>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="site-footer simple">
+    <div class="container tiny center">© 2025 RGS Vegetable Supplier</div>
+  </footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
